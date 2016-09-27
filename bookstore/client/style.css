@@ -1,0 +1,91 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.header {
+    height: 10%;
+    width: 100%;
+    padding-left: 3%;
+}
+
+.footer {
+    height: 30%;
+}
+
+.mycontainer {
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+#booksContainer {
+    width: 100%;
+}
+
+.wrapper {
+    height: 30%;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 70%;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    background-color: gray;
+    padding: 3px;
+    opacity: 0.9;
+}
+
+#cartInfo {
+    padding: 5px;
+    margin-left: 5%;
+    width: 15%;
+    height: 90%;
+    position: relative;
+    display: block;
+    float:left;
+}
+
+#purchasedBooksContainer {
+    white-space: nowrap;
+    height: 100%;
+}
+
+.book {
+    white-space: normal;
+    display: inline-block;
+    position: relative;
+    width: 24%;
+    float: bottom;
+    text-align: center;
+}
+
+#purchasedBooksContainer > .book {
+    width: 10%;
+    height: 95%;
+    max-height: 95%;
+    position: relative;
+    background-color: white;
+    margin: 3px;
+    opacity: 0.8;
+    border-radius: 5%;
+}
+
+.purchasedBooksContainer > .book > h3 {
+    position: relative;
+    float: top;
+    height: 15%;
+    max-height: 15%;
+    overflow: hidden;
+    font-size: small;
+}
+
+.removeFromCart {
+    font-size: small;
+    margin: 5%;
+    width: 90%;
+}

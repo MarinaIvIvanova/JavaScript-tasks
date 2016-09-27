@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+ <link rel="stylesheet" href="../lib/bootstrap/dist/css/bootstrap.min.css">
+ <link rel="stylesheet" type="text/css" href="style.css">
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+<div class="container">
+    <h1>Bookstore</h1>
+    <div class="booksContainer">
+     </div>
+               
+    <div class="cartInfo"> 
+	    <h1>Shopping cart:</h1>
+	    <p>Total number of pages in cart: </p>
+    </div>
+    <div class="purchaseBooksContainer">   
+    </div>             
+   
+   <div class="descriptionBook">
+   </div>
+</div>
+
+<script id="bookTemplate" type="text/x-jQuery-tmpl">
+	 <td id="${id}" class="book">
+            <h3>${title}</h3>
+            <img src="${image_url}">
+            <p>Average rating: ${average_rating}</p>
+            <button class="btn btnInfo description">Read description</button>
+            <button class="btn btnSuccess addToCart">Add to Cart</button>
+        </td>
+</script>
+<script id="purchaseTemplate" type="text/x-jQuery-tmpl">
+	 <td id="${id}" class="book">
+            <h3>${title}</h3>
+            <img src="${image_url}">
+            <p>Average rating: ${average_rating}</p>
+            <button class="btn btn-warning removeFromCart">Remove from cart</button>
+        </td>
+</script>
+<script id="descriptionTemplate" type="text/x-jQuery-tmpl">
+<div class="modal fade">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Modal title</h4>
+      </div>
+      <div class="modal-body">
+        <p>${description}</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div
+</script>
+<script src="../lib/jquery/dist/jquery.min.js"></script>
+ <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.templates/beta1/jquery.tmpl.js"></script>
+   <script src="../lib/bootstrap/dist/js/bootstrap.min.js"></script>
+ 
+<script type="text/javascript" src="bookstore.js"></script>
+</body>
+
+
+</html>
